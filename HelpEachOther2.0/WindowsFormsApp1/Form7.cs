@@ -84,11 +84,13 @@ namespace WindowsFormsApp1
             label8.Text = Text2;
             label9.Text = Text3;
             label10.Text = Text4;
-            sw.Write(Text1 + '\n');
-            sw.Write(Text2 + '\n');
-            sw.Write(Text3 + '\n');
-            sw.Write(Text4 + '\n');
-            sw.Write(Text5 + '\n');
+            if (Text1 != null){
+                sw.Write(Text1 + '\n');
+                sw.Write(Text2 + '\n');
+                sw.Write(Text3 + '\n');
+                sw.Write(Text4 + '\n');
+                sw.Write(Text5 + '\n');
+            }
 
             Text =sr.ReadToEnd();
             sw.Write(Text);
@@ -148,11 +150,13 @@ namespace WindowsFormsApp1
             label8.Text = Text2;
             label9.Text = Text3;
             label10.Text = Text4;
-            sw.Write(Text1 + '\n');
-            sw.Write(Text2 + '\n');
-            sw.Write(Text3 + '\n');
-            sw.Write(Text4 + '\n');
-            sw.Write(Text5 + '\n');
+            if (Text1 != null){
+                sw.Write(Text1 + '\n');
+                sw.Write(Text2 + '\n');
+                sw.Write(Text3 + '\n');
+                sw.Write(Text4 + '\n');
+                sw.Write(Text5 + '\n');
+            }
 
             Text = sr.ReadToEnd();
             sw.Write(Text);
